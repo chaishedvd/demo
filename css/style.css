@@ -1,0 +1,71 @@
+
+table {
+    overflow: hidden;
+  }
+  tr:nth-child(even) {
+    background: #F0F0F0 ;
+    }
+  tr:nth-child(odd) {
+    background: #FFF ;
+   }
+  
+  td, th {
+    padding: 10px;
+    position: relative;
+    outline: 0;
+  }
+  
+  tbody tr:hover {
+    background-color: lightskyblue;
+    z-index: -1;
+  }
+  
+  td:hover::after,
+  thead th:not(:empty):hover::after,
+  td:focus::after,
+  thead th:not(:empty):focus::after { 
+    content: '';  
+    height: 10000px;
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  td:hover::after,
+  th:hover::after {
+    position: absolute;  
+    background-color: lightskyblue !important;
+    z-index: -1;
+    
+  }
+  .abutton{
+  background-color: 	#46A3FF;
+  }
+  .sbutton{
+  background-color: 	#46A3FF;
+  
+  }
+  .plist{
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+    size: 200px;
+  }
+  
+  /* 底 */
+.plist {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+/* 標題 */
+.title {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #2F3640;
+  text-shadow: 3px 3px 	#97CBFF;
+}
